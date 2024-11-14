@@ -50,14 +50,21 @@ public class App {
 
     public static int[] copyFrontAndBack(int[] nums){
 
-        return null; //this is a placeholder
+        return new int[] {nums[0], nums[nums.length-1]};
 
     }
 
     public static int maxWordLength(String sentence){
+        int longest = 0;
+        String array[] = sentence.split(" ");
+        for (String i: array){
+            if (i.length()>longest) {
+                longest=i.length();
+            }
+        }
 
 
-        return -1; //this is a placeholder
+        return longest; //this is a placeholder
     }
 
 
